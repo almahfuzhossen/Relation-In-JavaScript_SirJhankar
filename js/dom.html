@@ -11,25 +11,32 @@
             background-color: rgba(210, 105, 30, 0.178);
          } */
 
+         /* .blog {
+            border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        } */
+
     </style>
 </head>
 <body>
     <header> Welcome To My Website </header>
     <main>
         <section>
-            <article>
+            <article class="blog">
                 <h3>My Awesome Blog-1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem libero sit! Labore consequatur explicabo ut ipsam neque fugiat voluptatem, quod consequuntur, veniam illum recusandae laborum perferendis, deserunt distinctio animi!</p>
             </article>
-            <article id="second-blog">
+            <article id="second-blog" class="blog">
                 <h3  id="second-title">My Awesome Blog-2</h3>
                 <p>Perspiciatis, nisi. Ad exercitationem tenetur neque veniam non, obcaecati et laudantium ipsa distinctio veritatis. Quibusdam provident, ut dolores autem facilis voluptatem expedita dignissimos magni ipsum numquam fuga reiciendis quia aut?</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id='third-title'>My Awesome Blog-3</h3>
                 <p>Quisquam nisi optio nulla iste, ducimus magni. Corrupti officiis eveniet harum pariatur, suscipit fuga at molestiae deleniti inventore debitis? Odit velit perferendis fuga error at placeat explicabo deserunt minus fugit.</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="fourth-title">My Awesome Blog-3</h3>
                 <p> fexiled nisi optio nulla iste, ducimus magni. Corrupti officiis eveniet harum pariatur, suscipit fuga at molestiae deleniti inventore debitis? Odit velit perferendis fuga error at placeat explicabo deserunt minus fugit.</p>
             </article>
@@ -57,6 +64,15 @@
         third.style.backgroundColor = 'salmon';
         third.style.padding = '10px';
         third.style.marginLeft = '20px'
+
+         // explore getElementsByClassName
+         const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+        }
 
 
     </script>
