@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom JS</title>
+    <style>
+         /* #second-title {
+            font-size: 24px;
+            background-color: rgba(210, 105, 30, 0.178);
+         } */
+
+    </style>
 </head>
 <body>
     <header> Welcome To My Website </header>
@@ -14,13 +21,17 @@
                 <h3>My Awesome Blog-1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem libero sit! Labore consequatur explicabo ut ipsam neque fugiat voluptatem, quod consequuntur, veniam illum recusandae laborum perferendis, deserunt distinctio animi!</p>
             </article>
-            <article>
-                <h3>My Awesome Blog-2</h3>
+            <article id="second-blog">
+                <h3  id="second-title">My Awesome Blog-2</h3>
                 <p>Perspiciatis, nisi. Ad exercitationem tenetur neque veniam non, obcaecati et laudantium ipsa distinctio veritatis. Quibusdam provident, ut dolores autem facilis voluptatem expedita dignissimos magni ipsum numquam fuga reiciendis quia aut?</p>
             </article>
             <article>
-                <h3>My Awesome Blog-3</h3>
+                <h3 id='third-title'>My Awesome Blog-3</h3>
                 <p>Quisquam nisi optio nulla iste, ducimus magni. Corrupti officiis eveniet harum pariatur, suscipit fuga at molestiae deleniti inventore debitis? Odit velit perferendis fuga error at placeat explicabo deserunt minus fugit.</p>
+            </article>
+            <article>
+                <h3 id="fourth-title">My Awesome Blog-3</h3>
+                <p> fexiled nisi optio nulla iste, ducimus magni. Corrupti officiis eveniet harum pariatur, suscipit fuga at molestiae deleniti inventore debitis? Odit velit perferendis fuga error at placeat explicabo deserunt minus fugit.</p>
             </article>
         </section>
     </main>
@@ -38,8 +49,15 @@
         for (const p of blogDetails){
             // console.log(p.innerText);
         }
+        // explore getElementById
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+        const third = document.getElementById('third-title');
+        third.innerText = 'Title updated by JS';
+        third.style.backgroundColor = 'salmon';
+        third.style.padding = '10px';
+        third.style.marginLeft = '20px'
 
-        
 
     </script>
 </body>
